@@ -1,0 +1,24 @@
+# 20 - Ler uma sequência de números iteiros e determinar se eles não pares ou não. Deverá ser informado
+# o número de dados lidos e número de valores pares. O processo termina quando for digitado o número 1000.
+
+
+num_pares = 0
+total_num = 0
+
+while True:
+    num = int(input('Digite um número inteiro ou 1000 para sair: '))
+
+    if num == 1000:
+        break
+
+    total_num = total_num + 1
+
+    if num % 2 != 0:
+        print('Número ímpar')
+
+    else:
+        print('Número par')
+        num_pares = num_pares + 1
+
+print(f'O número total de dados é {total_num}')
+print(f'O total de números pares é {num_pares}')
